@@ -73,24 +73,6 @@
                         </StackPanel>
                     </Grid>
                 </Border>
-
-                <!--<Border BorderThickness="1" BorderBrush="LightYellow">
-                    <Grid>
-                        <Label Content="mmHG" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="LightYellow" FontFamily="Franklin Gothic Demi" FontSize="16"/>
-                        <Canvas x:Name="nibp_canvas" RenderTransformOrigin="0.5,0.5">
-                            <Canvas.RenderTransform>
-                                <TransformGroup>
-                                    <ScaleTransform ScaleY="-1"/>
-                                    <SkewTransform/>
-                                    <RotateTransform/>
-                                    <TranslateTransform/>
-                                </TransformGroup>
-                            </Canvas.RenderTransform>
-                            <Polyline Stroke="Yellow" StrokeThickness="1"/>
-                            <Polyline Stroke="Yellow" StrokeThickness="1"/>
-                        </Canvas>
-                    </Grid>
-                </Border>-->
             </Grid>
 
             <Grid Grid.Row="1">
