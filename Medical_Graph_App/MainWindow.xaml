@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Medical_Graph_App"
+        xmlns:local="clr-namespace:Medical_Graph_App" d:DataContext="{d:DesignInstance Type=local:MainWindow}"
         mc:Ignorable="d"
         Title="MainWindow" d:DesignHeight="768" d:DesignWidth="1366" MinHeight="768" MinWidth="1366" Background="Black" Foreground="White" WindowStyle="SingleBorderWindow" Loaded="Window_Loaded">
     <Border BorderThickness="1" BorderBrush="White">
@@ -12,12 +12,12 @@
                 <RowDefinition Height="1*"/>
                 <RowDefinition Height="6*"/>
             </Grid.RowDefinitions>
-            <Rectangle x:Name="rect_splash" Grid.RowSpan="7" Panel.ZIndex="1">
+            <Rectangle x:Name="rect_splash" Grid.RowSpan="7" Panel.ZIndex="1" Visibility="Hidden">
                 <Rectangle.Fill>
                     <SolidColorBrush Color="White" Opacity="0.5"/>
                 </Rectangle.Fill>
             </Rectangle>
-            <local:UserControl1 x:Name="check_splash" Grid.RowSpan="7" Panel.ZIndex="2"/>
+            <local:UserControl1 x:Name="check_splash" Grid.RowSpan="7" Panel.ZIndex="2" Visibility="Hidden"/>
 
             <Grid>
                 <Grid.ColumnDefinitions>
