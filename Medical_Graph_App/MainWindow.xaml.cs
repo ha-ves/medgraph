@@ -144,6 +144,9 @@ namespace Medical_Graph_App
 
         public MainWindow()
         {
+#if DEBUG
+            RenderOptions.ProcessRenderMode = System.Windows.Interop.RenderMode.SoftwareOnly;
+#endif
             InitializeComponent();
 
             DataContext = this;
